@@ -1,0 +1,26 @@
+    [OUTPUT]
+        Name es
+        Match kube.*\n
+        Host elasticsearch-master.elasticsearch.svc.svc.cluster.local
+        Port 9200
+        HTTP_User elastic
+        HTTP_Passwd M8528c288dXNRARY9cq62izA
+        Logstash_Format On
+        Retry_Limit False
+        tls On
+        tls.verify Off
+        Suppress_Type_Name On
+        Trace_Error On
+    [OUTPUT]
+        Name es
+        Match host.*\n
+        Host elasticsearch-master.elasticsearch.svc.svc.cluster.local
+        Port 9200
+        HTTP_User elastic
+        HTTP_Passwd M8528c288dXNRARY9cq62izA
+        Logstash_Format On
+        Retry_Limit False
+        tls On
+        tls.verify Off
+        Suppress_Type_Name On
+        Trace_Error On
